@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/showGoods.css">
+    <script src="src/js/iconfont.js"></script>
+
+</head>
+
+<body  style='overflow:Scroll;overflow-x:hidden'>
+<div class="row" >
+    <nav class="navbar navbar-inverse" id="header">
+        <ul >
+            <li><a href="">首页/</a></li>
+            <li><a href="">商品分类/</a></li>
+            <li><a href="">上衣</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <!--展示商品图片-->
+    <div class="col-md-4">
+        <div class="box">
+            <div id="showImages" class="small">
+                <div class="mask"></div>
+            </div>
+
+            <div class="big">
+                <img src="src/img/syi.jpg"/>
+            </div>
+    </div>
+        <div id="show">
+            <ul id="Ul">
+                <!--<li class="showImgs"><img src="src/img/syi.jpg"/></li>-->
+                <!--<li class="showImgs"><img src="src/img/syi1.jpg"/></li>-->
+                <!--<li class="showImgs"><img src="src/img/syi2.jpg"/></li>-->
+                <!--<li class="showImgs"><img src="src/img/syi3.jpg"/></li>-->
+                <!--<li class="showImgs"><img src="src/img/syi4.jpg"/></li>-->
+            </ul>
+        </div>
+    </div>
+    <!--展示商品相关参数-->
+<div class="col-md-4">
+        <table class="table">
+            <tr>
+                <td class="danger">
+                    价格：<span style="font-size: 15px ; color: red;text-decoration:line-through"> 原价：220</span>
+                    <span style="font-size: 26px ; color: red;" id="nowPrice"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <span>尺码：</span>
+                    <!--<span class="goodsSize"> S </span>-->
+                    <!--<span class="goodsSize"> M </span>-->
+                    <!--<span class="goodsSize"> L </span>-->
+                    <!--<span class="goodsSize"> XL </span>-->
+                </td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <span>颜色：</span>
+                    <!--<img class="showColors" src="src/img/syi2.jpg"/>-->
+                    <!--<img class="showColors" src="src/img/syi3.jpg"/>-->
+                </td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <span>数量：</span>
+                    <form class="form-inline" style="display: inline-block">
+                    <input type="text" class="form-control" id="exampleInputAmount" value="1">
+                        <div style="display: inline-block;">
+                            <button id="inc" type="button">+</button>
+                            <button id="dec" type="button" style="display: none">-</button>
+                        </div>
+                </form>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div id = "suggest"class="col-md-1" style="margin-left: 20px">
+        <span style="width: 250px;font-size:20px;text-align: center;float: left">看了又看</span>
+        <ul id="showSuggest">
+            <li ><img src="src/img/l.jpg" /></li>
+            <li ><img src="src/img/l1.jpg"/></li>
+            <li ><img src="src/img/l2.jpg"/></li>
+            <li ><img src="src/img/l3.jpg"/></li>
+            <li ><img src="src/img/l4.jpg"/></li>
+            <li ><img src="src/img/l5.jpg"/></li>
+            <li ><img src="src/img/l6.jpg"/></li>
+            <li ><img src="src/img/l7.jpg"/></li>
+            <li ><img src="src/img/l8.jpg"/></li>
+            <li ><img src="src/img/l9.jpg"/></li>
+        </ul>
+    </div>
+    <div id="page" >
+        <ul style="display: inline-block;list-style: none">
+            <li> <svg class="icon" aria-hidden="true" style="width: 100px;height: 60px">
+                <use xlink:href="#icon-shangxiajiantou-copy"></use>
+            </svg>
+                </li>
+            <li>
+                <svg class="icon" aria-hidden="true" style="width: 100px;height: 60px">
+                <use xlink:href="#icon-xiajiantou"></use>
+            </svg></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2" style="background-color:rgba(144,144,144,.2);margin-top: 20px;height: 40px;margin-right: 4px;margin-left: 20px">  </div>
+    <div class="col-md-9" style="background-color: lightgray;margin-top: 20px;height: 40px;padding: 0;border: 1px solid lightgray">
+    <table id="showInformation">
+        <tbody>
+        <tr>
+            <td class="active"><a href="javascript:;">宝贝详情</a></td>
+            <td><a href="javascript:;">商品评价</a></td>
+            <td><a href="javascript:;">专享服务</a></td>
+        </tr>
+        </tbody>
+    </table>
+        <div id="showDetail">
+            <div id="showDetails0" style="width: 700px;height: 500px;margin-top: 10px; margin-left: 30px">
+
+                <img src="src/img/sss.jpg"/>
+                <img src="src/img/sss1.jpg"/>
+                <img src="src/img/sss2.jpg"/>
+                <img src="src/img/sss3.jpg"/>
+                <img src="src/img/sss4.jpg"/>
+                <img src="src/img/sss4.jpg"/>
+                <img src="src/img/sss5.jpg"/>
+                <img src="src/img/sss6.jpg"/>
+            </div>
+            <div id="showDetails1"style="width: 700px;height: 500px;margin-top: 10px;display: none">
+                <table  class="table table-striped" style="margin-left: 34px">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <form>
+                                    <label>
+                                        <input type="radio"  name="select" checked="checked" /><span class="selected">全部</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="select"/> <span>好评</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="select"/><span>中评</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="select"/><span>差评</span>
+                                    </label>
+                                </form>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <table  class="table table-striped" style="margin-left: 34px" id="all">
+                    <tbody>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss6.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">衣服样式特别好，卖家服务周到，态度特别好，不错的网购，下次再来逛逛</span>
+                            </td>
+                    </tr>
+                        <tr>
+                            <td>
+
+                                <img src="src/img/sss8.jpg" height="60" width="60"/>
+                                <span style="font-size: 18px">衣服样式特别好，卖家服务周到，态度特别好，不错的网购，下次再来逛逛</span>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss7.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">衣服样式特别好，卖家服务周到，态度特别好，不错的网购，下次再来逛逛</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss3.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">样子也还可以接受，就是现在穿起来比较冷了</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss4.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">穿起来还可以，就是物流有些慢</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss2.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">物流慢的没脾气了，商家服务态度也不怎么好，缺少耐心，衣服面料不咋地，大家不要买</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table  class="table table-striped" style="margin-left: 34px;display: none" id="good">
+                    <tbody>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss6.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">衣服样式特别好，卖家服务周到，态度特别好，不错的网购，下次再来逛逛</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss8.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">衣服样式特别好，卖家服务周到，态度特别好，不错的网购，下次再来逛逛</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss7.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">衣服样式特别好，卖家服务周到，态度特别好，不错的网购，下次再来逛逛</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table  class="table table-striped" style="margin-left: 34px;display: none" id="middle">
+                    <tbody>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss3.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">样子也还可以接受，就是现在穿起来比较冷了</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss4.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">穿起来还可以，就是物流有些慢</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table  class="table table-striped" style="margin-left: 34px;display: none" id="bad">
+                    <tbody>
+                    <tr>
+                        <td>
+
+                            <img src="src/img/sss2.jpg" height="60" width="60"/>
+                            <span style="font-size: 18px">物流慢的没脾气了，商家服务态度也不怎么好，缺少耐心，衣服面料不咋地，大家不要买</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+               </div>
+            <div id="showDetails2"style="width: 700px;height: 500px;margin-top: 10px;display: none">
+                <div class="text">安悦商城</div>
+                <table class="table">
+                    <tbody>
+                    <tr><td  style="font-size: 20px">商城承诺：本商城的货物均可放心购买，如有问题联系客服，本商城将会虔诚为您服务</td></tr>
+                    <tr><td  style="font-size: 20px">卖家承诺：72小时内发货，收获后15天内支持退货</td></tr>
+                    <tr><td  style="font-size: 20px;color:red">拒绝假货，拒绝跟风，积极举报有奖</td></tr>
+                    </tbody>
+                </table>
+               </div>
+        </div>
+        <div id="right">
+
+        </div>
+    </div>
+</div>
+
+<script src="src/js/main.js"></script>
+
+
+<script src="src/js/showDetails.js"></script>
+<script src="src/js/showGoods.js"></script>
+
+<script src="src/js/move.js"></script>
+</body>
+</html>

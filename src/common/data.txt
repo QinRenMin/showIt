@@ -1,0 +1,47 @@
+{
+
+        "commodity": {
+
+        "commId": 0,
+
+        "commName": "轩斯顿 夹克男文艺港风2018秋冬季新款棒球服韩版宽松情侣连帽夹克男士青年百搭运动外套潮流 黑色 XL",
+
+        "classifyId": 3,
+
+        "commPrice": 89,
+
+        "commStatus": 0,
+
+        "allSizeList": [
+
+            "X",
+
+            "XXL",
+
+            "XXXL"
+
+        ],
+
+        "inventoryList": [
+
+            50,
+
+            4,
+
+            800
+
+        ],
+
+        "allPicAddress": [
+
+            "https://img10.360buyimg.com/n9/s60x76_jfs/t29434/264/374592722/644889/31a9b551/5bf22a72N3bd57038.jpg!cc_60x76.jpg",
+
+            "https://img11.360buyimg.com/n9/s60x76_jfs/t29740/318/400508112/604413/3a9b0c0c/5bf22aa8N2c39fe18.jpg!cc_60x76.jpg"
+
+        ]
+
+    },
+
+    "status": 200
+
+}
